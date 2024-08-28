@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #f0f0f0;
+    opacity: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Calibri";
+  }
+  
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+        body {
+            background-image: url("bg.jpg");
+        }
+    #content {
+        color: white;
+        font-family: "Arial";
+        font-size: 20px;
+        padding: 70px;
+        padding-left: 50px;
+       
+    }
+    #content h1 {
+        font-size: 48px;
+        font-weight: 900;
+        padding-bottom: 40px;
+        width: 400px;
+    }
+    #content #team {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    #content #team h1 {
+        padding-right: 100px;
+    }
+    .card{
+        opacity:100%;
+        display: inline;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+
+    }
+    .shadow{
+        margin: 5px;
+    }
+    .rect {
+        width: 100px;
+        background-color: #6a6a6a;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <h3>Travel Recommendation</h3>
+        <ul>
+            <li><a href="./travel_recommendation.html">Home</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./contacts.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div id="about">
+            <h1>ABOUT US</h1>
+            <p>Welcome to Travel Recommendation, your <b>trusted travel recommendation partner</b>. We are dedicated to curating personalized travel experiences
+                 by combining expert insights, advanced technology, and a deep passion for discovery. 
+                 Whether you’re seeking a tranquil escape, an adventurous expedition, or a cultural immersion, our team of travel enthusiasts is here to guide you every step of the way.
+                   Explore the world with confidence and ease, knowing that Travel Recommendation is by your side.</p>
+        </div>
+        <div id="team">
+            <h1>Our Team</h1>
+            <div class="shadow">
+                <div class="card">
+                    <b>John Doe</b>
+                    <p>John is responsible for...</p>
+                    <div class="rect">CEO</div>
+                </div>
+                
+            </div>
+            <div class="shadow">
+                <div class="card">
+                    <b>Katya Thomas</b>
+                    <p>Katya is responsible for...</p>
+                    <div class="rect">Team Lead</div>
+                </div>
+                
+            </div>
+            <div class="shadow">
+                <div class="card">
+                    <b>Joe Rogger</b>
+                <p>Joe is responsible for...</p>
+                <div class="rect">Delivery Head</div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
