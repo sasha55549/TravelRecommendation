@@ -3,6 +3,7 @@ function addResult(result){
     let div = document.getElementById("results");
     let element = document.createElement("div");
     element.id=result.id;
+    element.classList.add("recs");
     let image = document.createElement("img");
     let h3 = document.createElement("h3");
     let p = document.createElement("p");
@@ -26,7 +27,7 @@ function addResult(result){
 
 
 function search() {
-    clear();
+    clearRes();
     let field = document.getElementById("search");
     let text = field.value.toLowerCase();
     fetch("travel_recommendation_api.json")
@@ -54,7 +55,7 @@ function search() {
         });
 }
 
-function clear() {
+function clearRes() {
     document.getElementById("results").innerHTML="";
     console.log("ok");
 }
